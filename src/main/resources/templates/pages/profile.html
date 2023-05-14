@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DENTISTRY</title>
+  <link rel="stylesheet" type="text/css" href="../styles/profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Стоматология "Зубная Фея"</h1>
+    <nav>
+      <ul>
+        <li><a href="mainPage.html"> <i class="fas fa-home"></i> Главная страница</a></li>
+        <li><a href="mainPage.html#services"> <i class="fas fa-th-list"></i> Услуги</a></li>
+        <li><a href="mainPage.html#about"> <i class="fas fa-info-circle"></i> О нас</a></li>
+        <li><a href="#"> <i class="fas fa-user"></i> Личный кабинет</a></li>
+        <li><button onclick="logout()">Выйти</button></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="profile">
+      <div class="container">
+        <h2>Мой профиль</h2>
+        <div class="profile-info" id="profile-info">
+          <h3>Информация о пациенте</h3>
+          <table>
+            <tr>
+              <td>Имя:</td>
+              <td id="patient-name"></td>
+            </tr>
+            <tr>
+              <td>Возраст:</td>
+              <td id="patient-age"></td>
+            </tr>
+            <tr>
+              <td>Пол:</td>
+              <td id="patient-gender"></td>
+            </tr>
+            <tr>
+              <td>Адрес:</td>
+              <td id="patient-address"></td>
+            </tr>
+            <tr>
+              <td>Номер телефона:</td>
+              <td id="patient-phone"></td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td id="patient-email"></td>
+            </tr>
+          </table>
+        </div>
+<!--        <div class="future-appointments">-->
+<!--          <h3>Будущие записи</h3>-->
+<!--          <ul>-->
+<!--            <li>15 мая 2023 года, 10:00 - прием у стоматолога</li>-->
+<!--            <li>20 мая 2023 года, 12:00 - гигиеническая чистка зубов</li>-->
+<!--          </ul>-->
+<!--        </div>-->
+        <div class="appointment-history">
+          <h2>История записей</h2>
+          <ul id="appointment-list">
+          </ul>
+        </div>
+      </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© Зубная фея, 2023</p>
+  </div>
+</footer>
+
+<script src="../service/profile.js" crossorigin="anonymous"></script>
+</body>
+</html>

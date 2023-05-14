@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DENTISTRY</title>
+    <link rel="stylesheet" type="text/css" href="../styles/registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Стоматология "Зубная Фея"</h1>
+        <nav>
+            <ul>
+                <li><a href="mainPage.html"> <i class="fas fa-home"></i> Главная страница</a></li>
+                <li><a href="mainPage.html#services"> <i class="fas fa-th-list"></i> Услуги</a></li>
+                <li><a href="mainPage.html#about"> <i class="fas fa-info-circle"></i> О нас</a></li>
+                <li><a href="#"> <i class="fas fa-user"></i> Личный кабинет</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="profile">
+        <div class="registration-form">
+            <h2>Регистрация</h2>
+            <form>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+                <label for="password">Пароль:</label>
+                <input type="pass" id="password" name="password" placeholder="Введите ваш пароль" required>
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+            <p>Уже есть аккаунт? <a href="auth.html">Авторизируйтесь</a></p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Стоматология "Зубная Фея"</p>
+</footer>
+
+<script src="../service/registration.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Запись на прием</title>
+    <!-- Подключение библиотеки jQuery для использования плагина datepicker -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/appointment.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script>
+        $(function() {
+            // Инициализация плагина datepicker
+            $('#datepicker').datepicker({
+                dateFormat: 'dd.mm.yy',
+                minDate: 0 // Запрещаем выбирать даты из прошлого
+            });
+            // Инициализация плагина timepicker
+            $('#timepicker').timepicker({
+                timeFormat: 'HH:mm', // формат времени
+                interval: 30, // интервал выбора времени в минутах
+                minTime: '08:00', // минимальное доступное время
+                maxTime: '18:00', // максимальное доступное время
+                defaultTime: '09:00' // время по умолчанию
+            });
+        });
+    </script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Стоматология "Зубная Фея"</h1>
+        <nav>
+            <ul>
+                <li><a href="mainPage.html"> <i class="fas fa-home"></i> Главная страница</a></li>
+                <li><a href="mainPage.html#services"> <i class="fas fa-th-list"></i> Услуги</a></li>
+                <li><a href="mainPage.html#about"> <i class="fas fa-info-circle"></i> О нас</a></li>
+                <li><a href="profile.html"> <i class="fas fa-user"></i> Личный кабинет</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<form id="appointment-form">
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Ваш e-mail:</label>
+    <input type="text" id="email" name="email" required>
+    <label for="type">Процедура:</label>
+    <input type="text" id="type" name="type" required>
+    <label for="date">Выберите дату приема:</label>
+    <input type="text" id="datepicker" name="date" required>
+    <label for="time">Выберите время приема:</label>
+    <input type="text" id="timepicker" name="time" required>
+    <label for="doctor">Выберите врача:</label>
+    <select id="doctor" name="doctor" required>
+        <option value="">Выберите врача</option>
+    </select>
+    <input type="submit" value="Записаться на прием">
+</form>
+
+<footer>
+    <div class="container">
+        <p>© Зубная фея, 2023</p>
+    </div>
+</footer>
+
+<script src="../service/appointment.js" crossorigin="anonymous"></script>
+</body>
+</html>

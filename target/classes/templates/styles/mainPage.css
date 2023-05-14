@@ -1,0 +1,147 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/фон.webp);
+}
+
+
+header,
+main,
+footer {
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Стили для header */
+header {
+    background-color: #f2f9fc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Стили для main */
+.banner {
+    /*background-image: url(../фон.webp);*/
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #5088a6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.services-heading {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #f2f9fc;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service img {
+    width: 250px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.about {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Стили для footer */
+footer {
+    background-color: #f2f9fc;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul li {
+    margin-right: 20px;
+}
+
+footer nav ul li:last-child {
+    margin-right: 0;
+}

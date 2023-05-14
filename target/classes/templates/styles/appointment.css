@@ -1,0 +1,160 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/фон.webp);
+}
+
+
+header,
+main,
+footer {
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Стили для header */
+header {
+    background-color: #f2f9fc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Стили для main */
+.banner {
+    /*background-image: url(../фон.webp);*/
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    /*text-align: center;*/
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #f2f9fc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+h1 {
+    margin: 0;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+input[type="text"] {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f7f7f7;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input[type="submit"] {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4a90e2;
+    color: #fff;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #3671c8;
+}
+.ui-datepicker {
+    font-size: 16px;
+}
+
+/* Стили для footer */
+footer {
+    background-color: #f2f9fc;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+label[for="doctor"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select#doctor {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+select#doctor option {
+    font-size: 16px;
+}
